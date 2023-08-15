@@ -9,7 +9,7 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="WANNA ADD ME BABE?💕",
+                text="ᴡᴀɴɴᴀ ᴀᴅᴅ ᴍᴇ ʙᴀʙᴇ?💕",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
@@ -30,13 +30,13 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="WANNA ADD ME BABE?💕",
+                text="ᴡᴀɴɴᴀ ᴀᴅᴅ ᴍᴇ ʙᴀʙᴇ?💕",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="✨ʜᴇʟᴩ✨", callback_data="settings_back_helper"
+                text="✦ʜᴇʟᴩ✦", callback_data="settings_back_helper"
             )
         ],
         [
@@ -44,12 +44,12 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 text="❊sᴜᴩᴩᴏʀᴛ❊", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="✨ᴅᴇᴠᴇʟᴏᴘᴇʀ💕", user_id=OWNER
+                text="✲ᴅᴇᴠᴇʟᴏᴘᴇʀ✲", user_id=OWNER
             )
         ],
         [
             InlineKeyboardButton(
-                text="✿sᴏᴜʀᴄᴇ✿", url=config.UPSTREAM_REPO
+                text="🥀ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ💗", url="https://t.me/BtwAbhii"
             )
         ],
      ]
