@@ -12,7 +12,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
-    anon = math.floor(percentage)
+    Mukesh = math.floor(percentage)
     if 0 < Mukesh <= 10:
         bar = "◉—————————"
     elif 10 < Mukesh < 20:
@@ -72,7 +72,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
-    anon = math.floor(percentage)
+    Mukesh = math.floor(percentage)
     if 0 < Mukesh <= 10:
         bar = "◉—————————"
     elif 10 < Mukesh < 20:
@@ -94,7 +94,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
     else:
         bar = "—————————◉"
 
-buttons = [
+    buttons = [
         [
             InlineKeyboardButton(
                 text=f"{played} {bar} {dur}",
@@ -236,7 +236,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
             InlineKeyboardButton(
                 text=_["P_B_1"],
                 callback_data=f"AnonPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
-                ),
+            ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
                 callback_data=f"AnonPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
